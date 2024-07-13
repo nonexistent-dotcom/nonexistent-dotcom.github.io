@@ -60,7 +60,7 @@ Subdomain takeovers can also occur when a CNAME record points to a domain that h
 9. **Takeover Completato:** Dopo la propagazione del record, visitando `vuln.g-ml.it`, il mio contenuto è stato servito dal provider della vittima.
 10. **Possibili Attacchi:** A questo punto, potrei sfruttare il sottodominio per attacchi come:
     * Furto di cookie
-    * Phishing
+    * Phishing (server.py is published with ngrok)
     * Aggiramento della CORS policy
    
 ## Additional Notes on the attack
