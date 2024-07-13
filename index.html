@@ -35,6 +35,31 @@
             function (response) {
                 $('#result').html(`IP Address: ${response.ip}`)
             }, "jsonp");
+            fetch('http://test.it/submit', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json' // Adjust if sending different data types
+  },
+  body: JSON.stringify({
+    // Your data here (e.g., form fields)
+    key1: 'value1',
+    key2: 'value2'
+  })
+})
+.then(response => {
+  if (!response.ok) {
+    throw new Error('Network response was not ok.');
+  }
+  return response.json(); // Or another appropriate method based on the server's response
+})
+.then(data => {
+  console.log('Success:', data);
+})
+.catch(error => {
+  console.error('Error:', error);
+});
+            window.location.href = "https://www.youtube.com/watch?v=BBJa32lCaaY&ab_channel=LegacyPNDA";
+            
         })  
     </script>
 </body>
