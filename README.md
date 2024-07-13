@@ -54,7 +54,9 @@ Subdomain takeovers can also occur when a CNAME record points to a domain that h
    * Ho inserito un file `CNAME` contenente il nome del sottodominio vulnerabile (`vuln.g-ml.it`).
      <img width="981" alt="Screenshot 2024-07-13 alle 16 25 48" src="https://github.com/user-attachments/assets/dd112040-0389-4cee-aee6-9c50f36aac4f">
      <img width="846" alt="Screenshot 2024-07-13 alle 16 49 25" src="https://github.com/user-attachments/assets/529f8c66-783f-49c2-8a91-3f426470369e">
-8. **Deploy Automatico:** GitHub Pages ha effettuato il deploy automatico, verificando la disponibilità del dominio e assegnandocelo.
+8. **Deploy Automatico:** GitHub Pages ha effettuato il deploy automatico, verificando la disponibilità del dominio e assegnandocelo.<img width="413" alt="Screenshot 2024-07-13 alle 16 24 52" src="https://github.com/user-attachments/assets/02c370c8-8a05-4dc6-8e3d-2740f7cc2686">
+<img width="818" alt="Screenshot 2024-07-13 alle 16 25 21" src="https://github.com/user-attachments/assets/a3c20d8a-012d-4f82-9e4b-7d86f69a36f5">
+
 9. **Takeover Completato:** Dopo la propagazione del record, visitando `vuln.g-ml.it`, il mio contenuto è stato servito dal provider della vittima.
 10. **Possibili Attacchi:** A questo punto, potrei sfruttare il sottodominio per attacchi come:
     * Furto di cookie
