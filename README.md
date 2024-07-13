@@ -45,7 +45,7 @@ Subdomain takeovers can also occur when a CNAME record points to a domain that h
 
 1. **Acquisto Dominio:** Ho acquistato il dominio `g-ml.it` su register.it.
 2. **Creazione Sottodominio:** Ho creato il sottodominio vulnerabile `vuln.g-ml.it`.
-3. **Configurazione DNS Errata:** Ho aggiunto un record CNAME nel DNS che punta a un servizio inesistente (`nonexistent-dotcom.github.io`) su GitHub Pages.
+3. **Configurazione DNS Errata:** Ho aggiunto un record CNAME nel DNS che punta a un servizio inesistente (`nonexistent-dotcom.github.io`) su GitHub Pages.<img width="588" alt="initial" src="https://github.com/user-attachments/assets/eaa465d1-e82b-4c7b-aedd-981bbc4379dc">
 4. **Verifica della Vulnerabilità:** Dopo la propagazione del record, ho verificato che il sottodominio restituisse un errore 404, confermando la vulnerabilità. ![404github](https://github.com/user-attachments/assets/da6bcecb-2520-4562-8d82-07ac773b30c0)
 5. **Creazione Account GitHub:** Ho creato un account GitHub con lo stesso nome del servizio inesistente (`nonexistent-dotcom`).
 6. **Creazione Repository:** Ho creato un repository pubblico su GitHub chiamato `nonexistent-dotcom.github.io`.
