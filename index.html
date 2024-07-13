@@ -1,2 +1,42 @@
-<h1>I stole this subdomain from my phone!</h1>
-<script>alert(1);</script>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Getting Clients IP
+    </title>
+
+    <style>
+        div{
+            text-align: center;
+        }
+        h1 {
+            color: green;
+        }
+    </style>
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1>I stole this subdomain from my phone!</h1>
+        <h3>
+            Getting Client IP address
+        </h3>
+        <p id="result"></p>
+    </div>
+    <script>
+        $(document).ready(()=>{
+            // Use "https://ipinfo.io" link to use the
+            // ipinfo for getting the ip address
+            $.getJSON("https://ipinfo.io",
+            function (response) {
+                $('#result').html(`IP Address: ${response.ip}`)
+            }, "jsonp");
+        })  
+    </script>
+</body>
+
+</html>
