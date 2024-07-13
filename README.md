@@ -67,3 +67,5 @@ Subdomain takeovers can also occur when a CNAME record points to a domain that h
 Se non avessi indizi non ho altra possibilità se non utilizzare strumenti come amass per ottenere informazioni riguardo possibili sottodomini,
 Lancio il comando : `amass enum -d example.com`
 nell'output cerco dei CNAME record
+<img width="566" alt="initial1" src="https://github.com/user-attachments/assets/6d70dd6e-a162-4cfe-9f7b-63eee8cd1c5b">
+
